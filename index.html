@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
     <Head>
-        <title>View Your Type</title>
+        <title>View Your Style</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
     </Head>
     <body>
         <div>
             <h2>Type your word here</h2>
-            <input type="text" name="word" id="inputWord">
+            <textarea name="word" id="inputWord" rows=10 cols=50 placeholder="Type here....">
+            </textarea>
         </div>
         <br>
         <br>
@@ -16,20 +18,14 @@
                 <option value="sansSerif">Sans Serif</option>
                 <option value="courierNew">Courier New</option>
                 <option value="arial">Arial</option>
+                <option value="timesNewRoman">Times New Roman</option>
+                <option value="times">Times</option>
             </select>
             <input type="button" value="Submit" id="btn">
         </div>
         <div>
             <p id="result"></p>
-            <!-- style="font-family: cursive;">Farhan -->
         </div>
-        <script>
-            // console.log(z)
-            let x = document.getElementById("btn").addEventListener("click", function(){
-            let y = document.getElementById("inputWord").value
-            let z = document.getElementById("fontType").value
-            document.getElementById("result").innerHTML = `<p style="font-family:${z};"> ${y}</p>`;
-            });
-        </script>
+        <script src="finalProject.js"></script>
     </body>
 </html>
